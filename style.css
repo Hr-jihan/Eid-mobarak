@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'poppins',sans-serif;
+    box-sizing:border-box; 
+}
+body{ 
+background-image:url(./images&others/background2.jpg) ;
+
+background-size: cover;
+overflow: hidden;
+background-repeat:no-repeat;
+background-position: center center;
+}
+.main{
+    margin: 200px auto;
+    background:linear-gradient(rgba(0,0,0,0.7),#bb73d371);
+    width: 40%;
+    border-radius: 10px;
+    inset: 10px;
+    color: aliceblue;
+    text-align: center;
+}
+.main h1{
+    text-align:center;
+    animation-name:SlideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1; 
+}
+@keyframes SlideInLeft{
+    from{
+    transform: translateX(-400px);
+    }
+    to{
+    transform: translateX(0px);
+    }
+}
+a{
+    background-color: black;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: antiquewhite;
+ 
+    
+}
+p{
+    animation-name:SlideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+@keyframes SlideInRight{
+    from{
+    transform: translateX(600px);
+    }
+    to{
+    transform: translateX(0px);
+    }
+}
